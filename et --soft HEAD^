@@ -1,0 +1,24 @@
+[33mcommit 84efdb975775d802bc31ace4be9019a250aac42c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31muptime/master[m[33m)[m
+Author: Burak Emre Ozer <bubabi01@gmail.com>
+Date:   Mon Oct 1 16:29:27 2018 +0300
+
+    monitoring completed
+
+[33mcommit 11642df0073a8802daed415964727afa944e287e[m
+Merge: 830f17c a39ce62
+Author: Burak Emre Ozer <bubabi01@gmail.com>
+Date:   Mon Oct 1 10:56:10 2018 +0300
+
+    Merge branch 'master' of https://github.com/Bubabi/uptime
+
+[33mcommit 830f17c28d384d0cf2f70b53d091933455da7379[m
+Author: Burak Emre Ozer <bubabi01@gmail.com>
+Date:   Mon Oct 1 10:53:28 2018 +0300
+
+    celery with docker
+
+[33mcommit a39ce622700eb148e009010244de513b70a3909f[m
+Author: Burak Emre Özer <bubabi01@gmail.com>
+Date:   Wed Sep 26 11:08:33 2018 +0300
+
+    Initial commit
