@@ -1,0 +1,91 @@
+
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1.title {
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+
+h2.subtitle {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+a {
+  color: #eee;
+}
+
+a:hover {
+  color: orange;
+}
+
+ul.apps {
+  font-size: 2rem;
+}
+
+.colors {
+  margin: 25px 0;
+}
+
+.colors .color-item {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #eee;
+  background-color: #555;
+  margin-right: 20px;
+}
+
+ul.messages {
+  margin: 0 0 20px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.messages li {
+    margin-bottom: 5px;
+    padding: 15px 20px;
+    background-color: #eaeaea;
+    color: #222;
+}
+
+ul.messages li.error {
+    background-color: #f7e4e1;
+}
+
+ul.messages li.success {
+    background-color: #e1faea;
+}
+
+table.monitor-form {
+    margin-top: 40px;
+}
+
+table.monitor-form th,
+table.monitor-buttons th {
+    padding-right: 10px;
+    text-align: right;
+    width: 200px;
+}
+
+table.monitor-form td.status-online,
+table.monitor-form td.status-offline {
+    padding: 0 5px;
+    color: white;
+}
+
+table.monitor-form td.status-online {
+    background-color: green;
+}
+
+table.monitor-form td.status-offline {
+    background-color: red;
+}
+
+table.monitor-buttons {
+    margin-top: 20px;
+}

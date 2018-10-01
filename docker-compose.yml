@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    command: python3 manage.py runserver 0:8000
+    volumes:
+      - .:/code
+    ports:
+      - 8000:8000
+  celery:
+    build: .
+    command: celery worker -l info -A uptime
+    volumes:
+      - .:/code
+    depends_on:
+      - amqp
+  celery-beat:
+    build: .
+    command: celery beat -l info -A uptime --scheduler django_celery_beat.schedulers:DatabaseScheduler
+    volumes:
+      - .:/code
+    depends_on:
+      - amqp
+      - celery
+  amqp:
+    image: rabbitmq:3.7

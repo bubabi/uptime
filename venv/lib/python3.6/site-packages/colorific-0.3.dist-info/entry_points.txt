@@ -1,0 +1,3 @@
+[console_scripts]
+colorific = colorific.script:main
+

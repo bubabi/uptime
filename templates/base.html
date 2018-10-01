@@ -1,0 +1,32 @@
+{% load i18n %}
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}Hello{% endblock %}</title>
+        <link rel="stylesheet" href="/static/main.css">
+    </head>
+    <body>
+        {% block header %}
+            <header>
+                {% if user.is_authenticated %}
+                    {% blocktrans with name=user.get_full_name|default:user.username %}Hello,  {{ name }}!{% endblocktrans %}
+                    <a href="{% url 'auth:logout' %}">{% trans "Log out" %}</a>
+                {% else %}
+                    <a href="{% url 'auth:login' %}">{% trans "Log in" %}</a>
+                {% endif %}
+            </header>
+        {% endblock %}
+
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        {% block content %}{% endblock %}
+    </body>
+</html>

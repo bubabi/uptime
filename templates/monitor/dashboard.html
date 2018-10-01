@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block title %}{{ block.super }} - Uptime{% endblock %}
+
+{% block content %}
+    <form action="{% url 'monitor:dashboard' %}" method="POST">
+        {% csrf_token %}
+        {{ formset.management_form }}
+        <table class="monitor-form">
+            {% for form in formset %}
+                <tr>
+                    <th></th>
+                    <td>{% blocktrans with number=forloop.counter %}Monitor {{ number }}{% endblocktrans %}</td>
+                </tr>
+                {% if form.instance.pk %}
+                    <tr>
+                        <th>{% trans "Status" %}:</th>
+                        <td class="status-{{ form.instance.status }}">{{ form.instance.get_status_display }}</td>
+                    </tr>
+                    <tr>
+                        <th>{% trans "Checked at" %}:</th>
+                        <td>{{ form.instance.checked_at }}</td>
+                    </tr>
+                {% endif %}
+                {{ form.as_table }}
+            {% endfor %}
+            <tr>
+                <th></th>
+                <td>
+                    <button type="submit">{% trans "Save" %}</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+{% endblock %}

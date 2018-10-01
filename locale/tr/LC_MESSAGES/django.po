@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-26 10:36+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: monitor/models.py:9 monitor/tests.py:9
+msgid "User"
+msgstr ""
+
+#: monitor/models.py:11 monitor/tests.py:11
+msgid "URL"
+msgstr ""
+
+#: monitor/models.py:13 monitor/tests.py:13
+msgid "Monitoring interval"
+msgstr ""
+
+#: monitor/models.py:15 monitor/tests.py:15
+msgid "Status"
+msgstr ""
+
+#: monitor/models.py:16 monitor/tests.py:16
+msgid "Is active?"
+msgstr ""
+
+#: monitor/models.py:17 monitor/tests.py:17
+msgid "Checked at"
+msgstr ""
+
+#: monitor/models.py:18 monitor/tests.py:18
+msgid "Created at"
+msgstr ""
+
+#: monitor/models.py:21 monitor/tests.py:21
+msgid "Monitor"
+msgstr ""
+
+#: monitor/models.py:22 monitor/tests.py:22
+msgid "Monitors"
+msgstr ""
+
+#: monitor/utils.py:15
+msgid "5 minutes"
+msgstr ""
+
+#: monitor/utils.py:16
+msgid "Half an hour"
+msgstr ""
+
+#: monitor/utils.py:17
+msgid "1 hour"
+msgstr ""
+
+#: monitor/utils.py:18
+msgid "6 hours"
+msgstr ""
+
+#: monitor/utils.py:34
+msgid "Online"
+msgstr ""
+
+#: monitor/utils.py:35
+msgid "Offline"
+msgstr ""
+
+#: monitor/views.py:33
+msgid "The monitors have been updated."
+msgstr ""
+
+#: monitor/views.py:37
+msgid "The monitors could not be updated, please check the form."
+msgstr ""
+
+#: templates/base.html:14
+#, python-format
+msgid "Hello,  %(name)s!"
+msgstr ""
+
+#: templates/base.html:15
+msgid "Log out"
+msgstr ""
+
+#: templates/base.html:17 templates/registration/login.html:14
+#: templates/registration/login.html:22
+msgid "Log in"
+msgstr ""
+
+#: templates/monitor/dashboard.html:15
+#, python-format
+msgid "Monitor %(number)s"
+msgstr ""
+
+#: templates/monitor/dashboard.html:21
+msgid "Save"
+msgstr ""
