@@ -1,4 +1,4 @@
-Django==2.0.5
+django>=2.0.8
 Pillow==5.1.0
 celery==4.1.1
 colorific==0.3
