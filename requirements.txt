@@ -1,5 +1,5 @@
 django>=2.0.8
-Pillow==6.2.0
+Pillow>=6.2.2
 celery==4.1.1
 colorific==0.3
 django_celery_beat==1.1.1
